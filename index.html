@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="content-language" content="en">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Picker — HTML Color Codes</title>
+    <meta property="og:type" content="website">
+    <link href="../style/style.css" rel="stylesheet" />
+  </head>
+  <body class="color-picker color-picker_index">
+    <div id="modal"></div>
+      <header id="header" class="red js-header">
+    <div class="header-group row"></div>
+  </header>
+    <nav id="color" class="color-nav">
+  <div class="color-data">
+    <div class="color-swatch" title="Selected color">
+      <div class="js-swatch js-star" style="background-color: #FF5733"></div>
+    </div>
+    <div class="color-label hex">
+      <h5>HEX</h5>
+    </div>
+    <div class="color-code hex" title="Hexadecimal value">
+      <span class="hex js-hex selectable">#FF5733</span>
+    </div>
+    <div class="color-label rgb show-sm-inline">
+      <h5>RGB</h5>
+    </div>
+    <div class="color-code rgb show-sm-inline" title="Red, green and blue values">
+      <span class="rgb js-rgb selectable">255, 87, 51</span>
+    </div>
+    <div class="color-label hsl show-md-inline">
+      <h5>HSL</h5>
+    </div>
+    <div class="color-code hsl show-md-inline" title="Hue, saturation and lightness values">
+      <span class="hsl js-hsl selectable">11, 80%, 60%</span>
+    </div>
+    <div class="color-export" title="Export palette">
+      <h5 class="export gray show-md js-export" data-export="palette"><svg version="1.1" class="button-svg" data-export="palette" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path class="fill" data-export="palette" d="M17.938,11.671l-5,4c-0.008,0.009-0.021,0.011-0.029,0.017c-0.118,0.09-0.248,0.164-0.389,0.215
+	c-0.024,0.011-0.049,0.017-0.075,0.023C12.303,15.971,12.155,16,12,16s-0.303-0.029-0.443-0.074
+	c-0.025-0.008-0.05-0.014-0.074-0.023c-0.142-0.051-0.271-0.125-0.389-0.215c-0.009-0.006-0.021-0.008-0.03-0.017l-5-4
+	C5.417,11.153,5.312,10.21,5.83,9.563c0.518-0.646,1.462-0.751,2.108-0.234l2.563,2.05V3.5C10.5,2.671,11.171,2,12,2
+	s1.5,0.671,1.5,1.5v7.879l2.562-2.05c0.649-0.518,1.592-0.413,2.107,0.234C18.688,10.21,18.584,11.154,17.938,11.671z M23,19.5v-4
+	c0-0.828-0.672-1.5-1.5-1.5S20,14.672,20,15.5V19H4v-3.5C4,14.672,3.329,14,2.5,14S1,14.672,1,15.5v4C1,20.879,2.122,22,3.5,22h17
+	C21.879,22,23,20.879,23,19.5z"/>
+</svg></h5>
+    </div>
+  </div>  
+  <div class="color-palette js-palette"></div>
+    <h5 class="export gray" data-export="palette"> 
+    </h5>
+  </div>
+</nav>
+<main id="main" class="row animate delay-125 fadeIn" role="main">
+
+<article id="picker" class="js-content">
+  <section class="row">
+    <div id="js-picker">
+    </div>
+  </section>
+  <section class="row">
+    <div class="buttons row">
+      <div class="button-list border white">
+        <h5 id="harmony" class="button-leader js-button js-button-leader">Analogous<span class="triangle gray"></span></h5>
+        <ul class="js-list">
+          <li>
+            <h5 id="complementary" class="js-button js-harmony complementary">Complementary</h5>
+          </li>
+          <li>
+            <h5 id="triadic" class="js-button js-harmony triadic">Triadic</h5>
+          </li>
+          <li>
+            <h5 id="tetradic" class="js-button js-harmony tetradic">Tetradic</h5>
+          </li>
+          <li>
+            <h5 id="analogous" class="js-button js-harmony analogous">Analogous</h5>
+          </li>
+          <li>
+            <h5 id="neutral" class="js-button js-harmony neutral">Neutral</h5>
+          </li>
+          <li>
+            <h5 id="shades" class="js-button js-harmony shades">Shades</h5>
+          </li>
+          <li>
+            <h5 id="tints" class="js-button js-harmony tints">Tints</h5>
+          </li>
+          <li>
+            <h5 id="tones" class="js-button js-harmony tones">Tones</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="button show-md-inline">
+        <h5 class="export gray js-export" data-export="harmony">Export Colors
+            <svg version="1.1" class="button-svg" data-export="harmony" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+            <path class="fill" data-export="harmony" d="M17.938,11.671l-5,4c-0.008,0.009-0.021,0.011-0.029,0.017c-0.118,0.09-0.248,0.164-0.389,0.215
+                c-0.024,0.011-0.049,0.017-0.075,0.023C12.303,15.971,12.155,16,12,16s-0.303-0.029-0.443-0.074
+                c-0.025-0.008-0.05-0.014-0.074-0.023c-0.142-0.051-0.271-0.125-0.389-0.215c-0.009-0.006-0.021-0.008-0.03-0.017l-5-4
+                C5.417,11.153,5.312,10.21,5.83,9.563c0.518-0.646,1.462-0.751,2.108-0.234l2.563,2.05V3.5C10.5,2.671,11.171,2,12,2
+                s1.5,0.671,1.5,1.5v7.879l2.562-2.05c0.649-0.518,1.592-0.413,2.107,0.234C18.688,10.21,18.584,11.154,17.938,11.671z M23,19.5v-4
+                c0-0.828-0.672-1.5-1.5-1.5S20,14.672,20,15.5V19H4v-3.5C4,14.672,3.329,14,2.5,14S1,14.672,1,15.5v4C1,20.879,2.122,22,3.5,22h17
+                C21.879,22,23,20.879,23,19.5z"/>
+            </svg>
+        </h5>
+      </div>
+     
+    </div>
+    <div id="harmonies"></div>
+  </section>
+</article>
+</main>
+    <footer id="footer" class="js-footer" role="contentinfo">
+    
+    </footer>
+    <script src="../js/script.js"></script>
+    
+  </body>
+</html>

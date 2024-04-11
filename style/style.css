@@ -1,0 +1,1097 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #3f3844;
+    margin: 0;
+    padding: 0;
+    font-size: "14px";
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-item {
+    flex: 1 1 200px; 
+}
+
+input, button, select, textarea {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption {
+    margin: 0;
+    font-family: "Roboto", 'Helvetica Neue', sans-serif;
+    padding: 0;
+    line-height:1.618
+}
+
+h5 {
+    font-family:"Roboto";
+    font-style: normal;
+    font-weight: 700;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-size:0.875rem
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size:1.3125rem
+}
+
+p a {
+    color: #303030;
+    border-bottom:2px solid #303030
+}
+
+p a:hover {
+    color: #303030;
+    border-bottom:2px solid #303030
+}
+
+figcaption {
+    font-style: normal;
+    font-weight: 700;
+    color: #c3c3c3;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+}
+
+a {
+    font-family: "Roboto";
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+code {
+    font-family: "Roboto", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.0375em;
+    line-height: 1.4;
+    font-size: 0.875rem;
+}
+
+.delay-125 {
+    -webkit-animation-delay: 125ms;
+    -moz-animation-delay: 125ms;
+    -o-animation-delay: 125ms;
+    animation-delay: 125ms;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 4;
+    color: #3f3844;
+    background-color: #f7f7f7;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#nav ul {
+    width: 100%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+#nav ul:before, #nav ul:after {
+    content: " ";
+    display: table;
+}
+
+#nav ul:after {
+    clear: both;
+}
+
+section.subnav {
+    border-top: 1px solid #eeeeee;
+}
+
+.nav-button {
+    position: absolute;
+    display: block;
+    top: 0em;
+    right: 0;
+    width: 3em;
+    height: 3em;
+    z-index:4
+}
+
+.nav-button span {
+    position: relative;
+    display: block;
+    width: 1.25em;
+    height: 2px;
+    margin-bottom: 5px;
+    border-radius: 0.1875em;
+    background-color: #3f3844;
+    z-index:4
+}
+
+#header .header-group {
+    padding: 7em 0 1em;
+}
+
+#main {
+    position: relative;
+    margin-top: -2.25em;
+    margin-bottom: 2.25em;
+    padding: 0 0 3em;
+    border-radius: 3px;
+    background-color: white;
+    -webkit-animation:  mainFade 1s;
+    -moz-animation:  mainFade 1s;
+    -ms-animation:  mainFade 1s;
+    -o-animation:  mainFade 1s;
+    animation: mainFade 1s
+}
+
+@keyframes mainFade {
+    0% {
+        opacity:0
+    }
+
+    40% {
+        opacity:0
+    }
+
+    100% {
+        opacity:1
+    }
+}
+
+#main > article {
+    position: relative;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 3em 1em 0;
+    float:left;
+}
+
+
+#main > article header p, #main > article section p {
+    margin-top: 0.375em;
+}
+
+#main > article.fixed {
+    padding: 7.875em 1.5em 0;
+}
+
+#main > article.color-html header {
+    margin-bottom: 3em;
+}
+
+#main > article.color-html section > div {
+    margin: 1.5em 0 1.5em;
+}
+
+#main > article.color-html section > div div:not(.color-table__color) {
+    float: left;
+    padding: 1.5em;
+    text-align: center;
+}
+
+#main > article.color-html section > div div:nth-child(1) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#main > article.color-html section > div div:nth-last-child(1) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#main > article.color-html section > div div.full {
+    width: 100%;
+}
+
+#main > article.color-html section > div div.third {
+    width: calc(100% / 3);
+}
+
+#main > article.color-html section > div div h3 {
+    font-size: 2.25rem;
+}
+
+#main > article.color-html section > div div h3 span:nth-child(1),
+#main > article.color-html section > div div h3 span:nth-child(2),
+#main > article.color-html section > div div h3 span:nth-child(3) {
+    margin: 0 0.1875em;
+    border-bottom: 3px solid;
+}
+
+#footer {
+    background-color: #d8a8db;
+    overflow-x: hidden;
+    height: 200px;
+}
+
+.arrow, .export {
+    cursor:pointer;
+}
+
+.export {
+    -webkit-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.arrow .button-svg, .export .button-svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom:3px
+}
+
+.arrow .button-svg {
+    margin-left: 0.375em;
+    margin-right: 0.1875em;
+    -webkit-transition: margin-left 0.375s cubic-bezier(0.4, 0, 0.2, 1), margin-right 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: margin-left 0.375s cubic-bezier(0.4, 0, 0.2, 1), margin-right 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: margin-left 0.375s cubic-bezier(0.4, 0, 0.2, 1), margin-right 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:margin-left 0.375s cubic-bezier(0.4, 0, 0.2, 1), margin-right 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.triangle {
+    pointer-events: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    margin-top: -4px;
+    margin-left: 0.75em;
+    border-radius: 2px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.triangle.white {
+    border-top:6px solid white
+}
+
+.triangle.gray {
+    border-top:6px solid #c3c3c3
+}
+
+.triangle.black {
+    border-top:6px solid #3f3844
+}
+
+.buttons {
+    margin-top:1.5em !important
+}
+
+.button {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    padding:0.75em 1em
+}
+
+.button.gray.border {
+    border-color: #eaeaea;
+    -webkit-transition: border 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: border 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: border 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:border 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button.gray.border:hover {
+    border-color:#3f3844
+}
+
+a .button h5 {
+    -webkit-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.border {
+    border: 1px solid;
+    border-radius:3px
+}
+
+.button-list {
+    position: relative;
+    display: block;
+    float: right;
+    z-index:1;
+}
+
+.button-list.white ul {
+    background-color:white;
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.button-list.white.border, .button-list.white.border ul {
+    border-color:#eaeaea
+}
+
+.button-list.gray ul {
+    background-color:#eeeeee
+}
+
+.button-list.gray.border, .button-list.gray.border ul {
+    border-color:#c3c3c3
+}
+
+.button-list.gray ul li h5 {
+    cursor: pointer;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button-list .button-leader {
+    padding: 0.75em 1em;
+    cursor:pointer
+}
+
+.button-list ul {
+    position: absolute;
+    overflow: hidden;
+    width: calc(100% + 2px);
+    max-height: 0;
+    margin: 0 -1px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: max-height 0.375s cubic-bezier(0.4, 0, 0.2, 1), opacity 0s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: max-height 0.375s cubic-bezier(0.4, 0, 0.2, 1), opacity 0s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: max-height 0.375s cubic-bezier(0.4, 0, 0.2, 1), opacity 0s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:max-height 0.375s cubic-bezier(0.4, 0, 0.2, 1), opacity 0s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button-list ul li {
+    padding:0.1875em 1em
+}
+
+.button-list ul li:nth-last-child(1) {
+    padding:0.1875em 1em 0.75em
+}
+
+.button-list ul li h5:hover {
+    color:#651e98;
+}
+
+.button-list.open.border {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px
+}
+
+.button-list.open ul {
+    max-height: 36em;
+    opacity: 1;
+    filter:alpha(opacity=100)
+}
+
+#picker .button-list {
+    min-width:12.5em
+}
+
+#picker .button-list ul li h5 {
+    cursor: pointer;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+#picker .button-list .triangle {
+    float: right;
+    margin-top:8px
+}
+
+.button-svg .fill {
+    fill: white;
+    stroke: none;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button-svg .stroke {
+    fill: none;
+    stroke: white;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.gray .button-svg .fill {
+    fill: #c3c3c3;
+    stroke:none
+}
+
+.gray .button-svg .stroke {
+    fill: none;
+    stroke:#c3c3c3
+}
+
+.black .button-svg .fill {
+    fill: #3f3844;
+    stroke:none
+}
+
+.black .button-svg .stroke {
+    fill: none;
+    stroke:#3f3844
+}
+
+    .white:hover .button-svg .fill {
+        fill:#651e98;
+    }
+
+    .white:hover .button-svg .stroke {
+        stroke:#651e98;
+    }
+
+    .gray:hover .button-svg .fill {
+        fill:#651e98;
+    }
+
+    .gray:hover .button-svg .stroke {
+        stroke:#651e98;
+    }
+
+    .black:hover .button-svg .fill {
+        fill:#c3c3c3
+    }
+
+    .black:hover .button-svg .stroke {
+        stroke:#c3c3c3
+    }
+
+
+nav.color-nav, nav.static-nav {
+    position: relative;
+    top: -2.25em;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 75em;
+    max-height: 78px;
+    min-height: 78px;
+    padding: 1.5em 0;
+    overflow: hidden;
+    z-index: 2;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid #eaeaea;
+    background-color: white;
+    -webkit-animation:  mainFade 1s;
+    -moz-animation:  mainFade 1s;
+    -ms-animation:  mainFade 1s;
+    -o-animation:  mainFade 1s;
+    animation: mainFade 1s
+}
+
+nav.color-nav div.color-data, nav.color-nav div.static-data, nav.static-nav div.color-data, nav.static-nav div.static-data {
+    width: calc(92% - 348px);
+    margin: 0;
+    padding: 0 1.5em;
+    float:left
+}
+
+nav.color-nav div.color-data div, nav.color-nav div.static-data div, nav.static-nav div.color-data div, nav.static-nav div.static-data div {
+    display: inline-block;
+    vertical-align:middle
+}
+
+nav.color-nav div.color-swatch div, nav.static-nav div.color-swatch div {
+    width: 50px;
+    height: 27px;
+    border-radius:3px
+}
+
+nav.color-nav div.color-label, nav.static-nav div.color-label {
+    margin-left:1em
+}
+
+nav.color-nav div.color-code, nav.static-nav div.color-code {
+    margin-left:0.5em
+}
+
+nav.color-nav div.color-code span, nav.static-nav div.color-code span {
+    font-family: "Roboto", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    color: #3f3844;
+    font-size: 18px;
+    font-size:1.125rem
+}
+
+nav.color-nav div.color-code.hex span, nav.static-nav div.color-code.hex span {
+    text-transform: uppercase;
+    letter-spacing:0.025em
+}
+
+nav.color-nav div.color-palette, nav.static-nav div.color-palette {
+    width: 348px;
+    padding: 0 1.5em;
+    float: left;
+    cursor:pointer
+}
+
+nav.color-nav div.color-palette h5, nav.static-nav div.color-palette h5 {
+    margin-top:3px
+}
+
+nav.color-nav div.color-palette > div, nav.static-nav div.color-palette > div {
+    width: calc(100% / 6);
+    height: 27px;
+    float:left
+}
+
+nav.color-nav div.color-palette > div div, nav.static-nav div.color-palette > div div {
+    width: 100%;
+    height:27px
+}
+
+nav.color-nav div.color-palette > div h4, nav.static-nav div.color-palette > div h4 {
+    display:none
+}
+
+nav.color-nav div.color-palette div:nth-child(1) div, nav.static-nav div.color-palette div:nth-child(1) div {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px
+}
+
+nav.color-nav div.color-palette div:nth-last-child(1) div, nav.static-nav div.color-palette div:nth-last-child(1) div {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius:3px
+}
+
+nav.color-nav div.color-export, nav.static-nav div.color-export {
+    float: right;
+    margin-top:3px
+}
+
+nav.color-nav.fixed {
+    position: fixed;
+    top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    z-index:4
+}
+
+#modal {
+    top: -150%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 13;
+    visibility: hidden;
+    -webkit-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:top 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-active {
+    overflow:hidden
+}
+
+.modal-active #overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    background-color: rgba(63, 56, 68, 0.875);
+}
+
+.modal-active #modal {
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    z-index: 13;
+    overflow-x: auto;
+    -webkit-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: top 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:top 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-content {
+    position: relative;
+    width: 84%;
+    max-width: 63em;
+    margin: 3em auto;
+    padding: 0.75em 0.75em 2.25em;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color:white
+}
+
+.modal-content:before, .modal-content:after {
+    content: " ";
+    display:table
+}
+
+.modal-content:after {
+    clear:both;
+}
+
+.modal-content > h5 {
+    margin:4px 0px 8px;
+    color: #651e98;
+}
+
+.modal-content > span {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 24px;
+    color: #0b0b0b;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    font-size: 2.25rem;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-content > span:hover {
+    color:#651e98;
+}
+
+.modal-swatches {
+    padding:0.75em
+}
+
+.modal-swatches > div {
+    position: relative;
+    float: left;
+    width: calc(100% / 6);
+    padding-bottom:9%
+}
+
+.modal-swatches > div div {
+    position: absolute;
+    border: 1px solid rgb(30, 30, 30);
+    width: 100%;
+    height:30px
+}
+
+.modal-swatches div:nth-child(1) div {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px
+}
+
+.modal-swatches div:nth-last-child(1) div {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius:3px
+}
+
+.modal-code {
+    width: calc(100% / 3);
+    padding: 0.75em;
+    float:left
+}
+
+.modal-code div {
+    padding: 0.75em;
+    border-radius: 3px;
+    border:1px solid #080707
+}
+
+.modal-code h5 {
+    margin-bottom:0.75em
+}
+
+.modal-code span {
+    font-family: "Roboto", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.0375em;
+    line-height: 1.4;
+    font-size: 14px;
+    font-size: 0.875rem;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #383838;
+    display:block
+}
+
+
+article#picker section:nth-child(1) {
+    margin-bottom:1.5em
+}
+
+section div#harmonies {
+    margin-right: -0.75em;
+    margin-left:-0.75em
+}
+
+.colorPicker {
+    width:100%;
+}
+
+.colorPicker .twod {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border-radius:3px;
+    height: 240px;
+}
+
+.colorPicker .twod .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius:3px
+}
+
+.colorPicker .twod .bg1 {
+    z-index: 0;
+    background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background:linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%)
+}
+
+.colorPicker .twod .bg2 {
+    z-index: 1;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%)
+}
+
+.colorPicker .twod .pointer {
+    position: relative;
+    z-index: 2;
+    width:8px
+}
+
+.colorPicker .twod .pointer .shape {
+    position:absolute
+}
+
+.colorPicker .twod .pointer .shape1 {
+    margin-left: -9px;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #3f3844;
+    -moz-border-radius: 9px;
+    border-radius: 9px
+}
+
+.colorPicker .twod .pointer .shape2 {
+    margin-left: -6px;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    -moz-border-radius: 6px;
+    border-radius:6px
+}
+
+.colorPicker .oned {
+    float: left;
+    border-radius:3px;
+    width: 40px;
+    height: 240px;
+    padding: 0 0 0 1.5em;
+    margin-right: 20px;
+}
+
+.colorPicker .oned .bg {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, red 0%, #ff0 17%, lime 33%, cyan 50%, blue 66%, #f0f 83%, red 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, red), color-stop(17%, #ff0), color-stop(33%, lime), color-stop(50%, cyan), color-stop(66%, blue), color-stop(83%, #f0f), color-stop(100%, red));
+    background: -webkit-linear-gradient(top, red 0%, #ff0 17%, lime 33%, cyan 50%, blue 66%, #f0f 83%, red 100%);
+    background: -o-linear-gradient(top, red 0%, #ff0 17%, lime 33%, cyan 50%, blue 66%, #f0f 83%, red 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(17%, #ff0), color-stop(33%, lime), color-stop(50%, cyan), color-stop(66%, blue), color-stop(83%, #f0f), to(red));
+    background: linear-gradient(to bottom, red 0%, #ff0 17%, lime 33%, cyan 50%, blue 66%, #f0f 83%, red 100%);
+    border-radius: 5px;
+}
+
+.colorPicker .oned .pointer {
+    position: relative;
+    z-index:2
+}
+
+.colorPicker .oned .pointer .shape {
+    position: absolute;
+    width: calc(100% + 6px);
+    margin-left: -3px;
+    margin-top: -4px;
+    height: 9px;
+    border: 3px solid #060606;
+    -moz-border-radius: 3px;
+    border-radius:3px
+}
+
+.colorPicker .extras {
+    position: relative;
+    float: right;
+    border-radius: 20px;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-bottom:1px solid #eaeaea;
+    width: 500px;
+    height: 335px;
+    margin-top: 0.5em;
+    padding: 1em 1.5em;
+    border-top: 1px solid #eaeaea;
+}
+
+.colorPicker .extras .currentColorContainer {
+    margin:-1.5em -1.5em 1em
+}
+
+.colorPicker .extras .currentColor {
+    cursor: pointer;
+    width: calc(100% + 2px);
+    height: 86px;
+    margin-left: -1px;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px
+}
+
+.colorPicker .extras div.hex, .colorPicker .extras div.colorFields {
+    padding-bottom:0.5em;
+    display: flex;
+    width: calc(100% ); 
+}
+
+.colorPicker .extras label, .colorPicker .extras input {
+    font-family: "Roboto", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size:0.875rem
+}
+
+.colorPicker .extras label {
+    padding-right: 1.125em;
+    font-weight: 600;
+    width: 40%;
+    color: #c3c3c3;
+}
+
+.colorPicker .extras input {
+    width: 60%;
+    border: none;
+    font-weight: 700;
+    padding: 0.0625rem 0.75em 0.0625em;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: transparent;
+    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.colorPicker .extras input:focus {
+    outline: none;
+    border: 1px solid #eaeaea;
+    background-color:transparent
+}
+
+.colorPicker .extras input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+
+.colorPicker .extras .currentColorContainer .currentColor {
+    height: 88px;
+}
+
+.color-card {
+    position: relative;
+    width: 25%; 
+    margin: 0 0 1.5em;
+    padding: 0 0.75em;
+    overflow: hidden;
+    float: left;
+}
+
+.color-card .color-swatch {
+    position: relative;
+    width: 100%;
+    padding-bottom: 54%;
+    cursor: pointer;
+}
+
+.color-card .color-swatch div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.color-card .color-data {
+    padding: 0.75em 1em 0.375em;
+    border: 1px solid #eaeaea;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.color-card .color-data h4 {
+    height: 22px;
+    margin-bottom: 0.375em;
+}
+
+#names > section {
+    margin-right: -1.5em !important; 
+    margin-left: -1.5em !important;
+}
+
+#names > section#how-to {
+    margin-right: 0;
+    margin-left:0
+}
+
+.responsive-ad-unit-300 {
+    width: 300px;
+    height:250px !important
+}
+
+:root {
+    --color-black: #3F3844;
+    --color-white: #FFFFFF;
+    --color-gray--dark: #888888;
+    --color-gray: #C3C3C3;
+    --color-gray--border: #EAEAEA;
+    --color-gray--background: #F7F7F7;
+    --color-magenta: #900C3F;
+    --color-red: #C70039;
+    --color-orange: #FF5733;
+    --color-yellow: #FFC300;
+    --color-green: #5AE5B8;
+    --color-chartreuse: #DAF7A6;
+    --color-blue: #00BAAD;
+    --color-purple: #581845;
+    --color-shadow: rgba(63, 56, 68, 0.0625);
+    --font-body: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+    --font-mono: "Courier", Courier, monospace
+}
+
+*, * :before, * :after {
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box
+}
+
+::-moz-selection {
+    color: var(--color-white);
+    background:var(--color-black)
+}
+
+::selection {
+    color: var(--color-white);
+    background:var(--color-black)
+}
+
+::-moz-selection {
+    color: var(--color-white);
+    background:var(--color-black)
+}
+
+html, body {
+    color: var(--color-black);
+    font-family:var(--font-body);
+}
+
+a {
+    color: inherit;
+    text-decoration:none
+}
+
+.body-header {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    background-color:var(--color-white)
+}
+
+.menu {
+    display: flex;
+    max-width: 7em;
+    margin:0 auto
+}
+
+body {
+    background-color:#e1b4d8
+}
+
+*, * :before, * :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box
+}
+
+.row {
+    width: 100%;
+    max-width: 75em;
+    margin:0 auto
+}
+
+.row:before, .row:after {
+    content: " ";
+    display:table
+}
+
+.row:after {
+    clear: both
+}
